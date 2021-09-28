@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="DatabaseMigration.MigrationWindowControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             Name="MyToolWindow"             Loaded="Window_Loaded" Width="540" Height="420">
+
+    <Grid Margin="0,0,0,0" Height="530" Width="540" VerticalAlignment="Top">
+        <StackPanel Orientation="Vertical" Margin="10,18,0,137" Height="375" Width="770" RenderTransformOrigin="0.994,0.499" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" Margin="0,0,350,0">
+				<Label Content="Project Name:" Width="120"/>
+                <ComboBox Name="projectNameCb"  Margin="0 0 0 10" Width="300"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,350,10" Height="24">
+				<Label Content="Operation :" Width="120"/>
+                <RadioButton Name="CreateTable" Content="Create" IsChecked="True" Margin="0 0 0 0"/>
+                <RadioButton Name="AlterTable" Content="Alter"/>
+                <RadioButton Name="InsertTable" Content="Insert"/>
+                <RadioButton Name="UpdateTable" Content="Update"/>
+                <RadioButton Name="DeleteTable" Content="Delete"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,350,0">
+                <Label Content="DB Object Name :" Width="120"/>
+                <TextBox Name="tableNameTb" Height="25" TextWrapping="Wrap" Text="" Width="300" Margin="0 0 0 10"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,350,0">
+				<Label Content="Up :" Name="LabelUp" Width="120"/>
+                <TextBox Name="upTb" Height="110" TextWrapping="Wrap" Text="" Width="300" AcceptsReturn="True"
+  VerticalScrollBarVisibility="Visible" Margin="0 0 0 10"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,350,0">
+				<Label Content="Down :" Name="LabelDown" Width="120"/>
+                <TextBox x:Name="downTb" Height="110" TextWrapping="Wrap" Text="" Width="300" AcceptsReturn="True"
+  VerticalScrollBarVisibility="Visible" Margin="0 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,230,0">
+				<Button Content="Save" Click="Button_Click" Height="30" Width="300" Margin="120,10,348.8,10"/>
+			</StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
