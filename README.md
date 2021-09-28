@@ -1,4 +1,4 @@
-# fluentmigrator.migrationgenerator
+# FluentMigrator.MigrationGenerator
 
 [FluentMigrator](https://github.com/schambers/fluentmigrator) is a SQL migration framework designed to help version an application's database. This package allows a developer to quickly create a new migration from within Visual Studio's Tool Window. 
 
