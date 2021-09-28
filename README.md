@@ -14,7 +14,7 @@ Build the project then install DatabaseMigration.vsix as an extension.
 
 Once installed, open the `View > Other Windows > Database Migration Window` in Visual Studio.
 
-In the new window, choose migration project and operation.
+In the new window, choose migration project and operation then type db object name. when you click save button, migration file will be created and opened in Visual Studio as an active file.
 
 You should see the following structure in the `Migration` project.
 
